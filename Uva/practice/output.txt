@@ -1,0 +1,6 @@
+Case #1: Dilbert should drink beverages in this order: a c s e b d t f.
+
+Case #2: Dilbert should drink beverages in this order: s a c e b t d f.
+
+Case #3: Dilbert should drink beverages in this order: a c s b e d t f.
+

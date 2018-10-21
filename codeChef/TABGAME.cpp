@@ -40,11 +40,6 @@
 using namespace std;
 
 void solve(){
-    int win = 0;
-    string a,b;
-    cin >> a >> b;
-    int q;
-    cin >> q;
     
 }
 

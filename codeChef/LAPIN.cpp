@@ -4,22 +4,20 @@ using namespace std;
 void solve(){
     string a;
     cin >> a;
-    int k1,k2;
-    if(a.length()%2 == 0){
-        k1 = a.length()/2;
-        k2 = a.length()/2;
-    }else{
-        k1 = a.length()/2;
-        k2 = a.length()/2 + 1;
+    // if(a.length() % 2 == 1){
+    //     cout << "NO\n";
+    //     return ;
+    // }
+    map<char,int> m1,m2;
+    for(int i = 0; i < a.length()/2; ++i){
+        // cout << a[i+a.length()/2] << " " << i+a.length()/2 << endl;
+        m1[a[i]]++;
+        m2[a[i+a.length()/2 + (a.length()%2)]]++;
     }
-    int f1[26] = {0};
-    int f2[26] = {0};
-    for(int i = 0; i < k1; ++i){
-        f1[a[i]-'a']++;
-        f2[a[i+k2]-'a']++;
-    }
-    for(int i = 0; i < 26; ++i){
-        if(f1[i] != f2[i]){
+    // cout << m2['a'] << endl;
+    for(auto i:m1){
+        // cout << i.first << " " << i.second << " " << m2[i.first] << endl;
+        if(m2[i.first] != i.second){
             cout << "NO\n";
             return ;
         }

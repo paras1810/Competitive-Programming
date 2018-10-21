@@ -38,25 +38,20 @@ while i < 10:
     digits.append(str(i))
     i = i + 1
 fopen = open('input.txt','w')
-n = getNumber(1,100000)
-# x = getNumber(1,1000)
-arr = [200000,1000000000]
-# arr.append(n)
-# arr.append(x)
-# writeNumber(n,fopen)
-writeArray(arr,fopen)
+n = getNumber(900,1000)
+q = getNumber(90000,100000)
 arr = []
-for i in range(200000):
-    arr.append(1000000000)
-
+arr.append(n)
+arr.append(q)
 writeArray(arr,fopen)
-# x = getNumber(-10,10)
-# arr.append(x)
-# t = arr[0]
-# for i in range(n-1):
-#     p = [-1,1]
-#     x = random.randint(1,213123123)%2
-#     t = t + p[x]
-#     arr.append(t)
-# writeArray(arr,fopen)
-# writeString(getString(smallLetters,15),fopen)
+for i in range(n):
+    arr = []
+    x = getNumber(-200000,200000)
+    y = getNumber(-200000,200000)
+    r = getNumber(0,200000)
+    arr.append(x)
+    arr.append(y)
+    arr.append(r)
+    writeArray(arr,fopen)
+for i in range(q):
+    writeNumber(getNumber(0,1000000),fopen)
