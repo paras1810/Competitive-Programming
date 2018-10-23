@@ -15,8 +15,10 @@
 #define looprs(i,a,b,step) for(int i=a;i>=b;i-=step)
 #define ull unsigned long long int
 #define ll long long int
+#define f float
+#define d double
 #define P pair
-#define PLL pair<long long, long long>
+#define PLL pair<long long int, long long int>
 #define PII pair<int, int>
 #define PUU pair<unsigned long long int, unsigned long long int>
 #define L list
